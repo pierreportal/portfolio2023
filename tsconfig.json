@@ -1,26 +1,31 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
-}
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "baseUrl": ".",
+        "downlevelIteration": true,
+        "esModuleInterop": true,
+        "jsx": "react",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "es2017",
+            "esnext.asynciterable",
+            "scripthost",
+            "es2018.promise"
+        ],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noLib": false,
+        "paths": {
+            "@app": ["/src/app/a.ts"],
+            "@store": ["/src/app/store.ts"]
+        },
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+        "target": "es5"
+    },
+    "exclude": ["./node_modules", "./src/node_modules", "./src/**/*.spec.tsx"],
+    "include": ["src"]
+}   
